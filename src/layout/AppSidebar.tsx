@@ -19,11 +19,11 @@ import { GlobalStyles } from '@mui/joy';
 import { closeSidebar } from './layoutUtils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import useUserInfo from '@/zustand/useUserInfo';
 
 const { auth } = firebaseServices;
 export default function AppSidebar() {
-  // const { userData } = useAppSelector((s) => s.user);
-  const userData = {} as any;
+  const { userData } = useUserInfo();
   const pathname = usePathname();
 
   return (
@@ -130,7 +130,9 @@ export default function AppSidebar() {
           size='sm'
           variant='plain'
           color='neutral'
-          onClick={() => auth.signOut().then(() => window.location.reload())}
+          onClick={() =>
+            auth.signOut().then(() => (window.location.href = '/login'))
+          }
         >
           <LogoutRoundedIcon />
         </IconButton>

@@ -6,8 +6,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['vietnamese'] });
 
 export const metadata: Metadata = {
-  title: 'Lubby Cake',
-  description: 'Lubby Cake - Bánh ngon mỗi ngày',
+  title: 'Lubby Cake Admin',
+  description: 'Lubby Cake Admin - Quản lý dữ liệu',
 };
 
 export default function RootLayout({
