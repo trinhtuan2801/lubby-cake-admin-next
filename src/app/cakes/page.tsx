@@ -14,7 +14,7 @@ export default function CakePage() {
         }}
       />
 
-      <Typography level='title-md' color='primary' fontWeight='bold'>
+      <Typography level='title-md' fontWeight='bold'>
         Danh sách bánh
       </Typography>
       <CakeTable />

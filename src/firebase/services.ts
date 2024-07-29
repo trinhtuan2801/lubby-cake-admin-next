@@ -1,11 +1,10 @@
-// Import the functions you need from the SDKs you need
-import APP_ENV from '@/app-env';
+import APP_ENV from '@/env';
 import { initializeApp } from 'firebase/app';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
-const firebaseConfig = APP_ENV.firebase;
+const firebaseConfig = APP_ENV.FIREBASE;
 
 export const app = initializeApp(firebaseConfig);
 

@@ -1,5 +1,5 @@
 const APP_ENV = {
-  firebase: {
+  FIREBASE: {
     apiKey: process.env.NEXT_PUBLIC_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
@@ -8,5 +8,7 @@ const APP_ENV = {
     appId: process.env.NEXT_PUBLIC_APP_ID,
     measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
   },
+  REVALIDATE_CAKE_URL: process.env.REVALIDATE_CAKE_URL,
+  REVALIDATE_CAKE_SECRET_KEY: process.env.REVALIDATE_CAKE_SECRET_KEY,
 };
 export default APP_ENV;

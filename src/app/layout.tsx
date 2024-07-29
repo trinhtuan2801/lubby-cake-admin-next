@@ -3,7 +3,11 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['vietnamese'] });
+const inter = Inter({
+  subsets: ['vietnamese'],
+  display: 'swap',
+  adjustFontFallback: false,
+});
 
 export const metadata: Metadata = {
   title: 'Lubby Cake Admin',

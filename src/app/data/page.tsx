@@ -8,7 +8,7 @@ import DeleteUnusedImagesButton from '../../components/pages/data/DeleteUnusedIm
 export default function DataPage() {
   return (
     <>
-      <Typography level='title-md' color='primary' fontWeight='bold'>
+      <Typography level='title-md' fontWeight='bold'>
         Dữ liệu
       </Typography>
       <Box
@@ -17,8 +17,8 @@ export default function DataPage() {
         alignItems='flex-start'
         gap={1}
       >
-        <DeleteUnusedImagesButton />
         <DeployButton />
+        <DeleteUnusedImagesButton />
       </Box>
     </>
   );
